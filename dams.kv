@@ -1,0 +1,1076 @@
+MDFloatLayout:
+    md_bg_color: 1,1,1,1
+    Carousel:
+        id: carousel
+        direction: "right"
+        anim_type: "in_out_quad"
+        index: 3
+        MDFloatLayout:
+            md_bg_color: 1,1,1,1
+            Image:
+                source: "dams.png"
+                size_hint: .50, .50
+                pos_hint: {"center_x": .50, "center_y": .40}
+            Image:
+                source: "rspllc.png"
+                size_hint: 1,1
+                pos_hint: {"center_x": .52, "center_y": .85}
+            MDLabel:
+                text: "© 2023 Damszt LLC. All Rights Reserved"
+                font_name: "good"
+                font_size: "20sp"
+                pos_hint: {"center_x": .54, "center_y": .20}
+            MDLabel:
+                text: "Damszt  LLC"
+                font_name: "bold"
+                font_size: "25sp"
+                pos_hint: {"center_x": .83, "center_y": .70}
+        MDFloatLayout:
+            md_bg_color: 1,1,1,1
+            MDLabel:
+                text: " Damszt "
+                theme_text_color: "Custom"
+                font_name: "bold"
+                font_size: "20sp"
+                pos_hint: {"center_x": .71, "center_y": .960}
+            MDLabel:
+                text: "     About Us"
+                theme_text_color: "Custom"
+                text_color: 46/255,139/255,87/255
+                font_name: "good"
+                font_size: "23sp"
+                pos_hint: {"center_x": .92, "center_y": .965}            
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .19, .09
+                pos_hint: {"center_x": .50, "center_y": .100}
+                on_release:
+                    app.click(100)
+                Image:
+                    id: nav
+                    source: "navi.png"
+                    size_hint: 1,1
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+            MDLabel:
+                theme_text_color: "Custom"
+                halign: "auto"
+                valign: "top"
+                md_bg_color: (240/255,248/255,255/255)
+                text: " ¶  Thank You For Choosing a Product From Damszt.\n\n ¶  This is the First Product from Damszt.\n\n ¶  DAMSZT is the Acronym of Development of Apps for Modern Science and Zenith Technologies.\n\n ¶ DAMSZT should be pronounced as \"dams\" where \'t\' is silent.\n\n ¶  Do Support us by sharing this app with your neighbours and by sharing your experience with us.\n\n            # Support DAMSZT #"
+                size_hint: 0.9, 0.7
+                font_name: "u"
+                font_size: "18sp"
+                background_color: 1,1,1,1
+                pos_hint: {"center_x": .50, "center_y": .565}
+        MDFloatLayout:
+            md_bg_color: 1,1,1,1
+            MDLabel:
+                text: " Damszt "
+                theme_text_color: "Custom"
+                font_name: "bold"
+                font_size: "20sp"
+                pos_hint: {"center_x": .69, "center_y": .960}
+            MDLabel:
+                text: "    Instructions"
+                text_color: 128/255,0,0
+                theme_text_color: "Custom"
+                font_name: "good"
+                font_size: "23sp"
+                pos_hint: {"center_x": .90, "center_y": .965} 
+            Button:
+                text: ""
+                font_size: 32
+                background_normal: "dams.png"
+                background_down: "dams.png"
+                size_hint: .50, .25
+                pos_hint: {"center_x": .30, "center_y": .75}
+                on_release:
+                    app.speak(1)   
+            MDLabel:
+                text: " Microphone "
+                theme_text_color: "Custom"
+                font_name: "p"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .58, "center_y": .60}    
+            Button:
+                text: ""
+                font_size: 32
+                background_normal: "navi.png"
+                background_down: "navi.png"
+                size_hint: .40, .20
+                pos_hint: {"center_x": .70, "center_y": .75}
+                on_release:
+                    app.speak(2)     
+            MDLabel:
+                text: " Navigator "
+                theme_text_color: "Custom"
+                font_name: "p"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": 1.0, "center_y": .60}     
+            Button:
+                text: ""
+                font_size: 32
+                background_normal: "info.png"
+                background_down: "info.png"
+                size_hint: .35, .18
+                pos_hint: {"center_x": .30, "center_y": .38}
+                on_release:
+                    app.speak(3)    
+            MDLabel:
+                text: " Informant "
+                theme_text_color: "Custom"
+                font_name: "p"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .60, "center_y": .25}      
+            Button:
+                text: ""
+                font_size: 32
+                background_normal: "bin.png"
+                background_down: "bin.png"
+                size_hint: .30, .20
+                pos_hint: {"center_x": .70, "center_y": .40}
+                on_release:
+                    app.speak(4)        
+            MDLabel:
+                text: " Trashman "
+                theme_text_color: "Custom"
+                font_name: "p"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": 1.0, "center_y": .25}   
+            MDLabel:
+                text: " !!! Tap and know about the icons !!!"
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "16sp"
+                size_hint: 0.9, 0.06
+                pos_hint: {"center_x": .50, "center_y": .89}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,1,1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height  
+            MDLabel:
+                text: "  <<< Swipe Left For HomePage "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .50, "center_y": .07}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,1,1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height      
+                    
+        MDFloatLayout:
+            md_bg_color: 1,1,1,1
+            Image:
+                source: "dams.png"
+                size_hint: .45, .45
+                pos_hint: {"center_x": .53, "center_y": .88}
+            MDLabel:
+                text: "Damszt"
+                theme_text_color: "Custom"
+                font_name: "bold"
+                font_size: "30sp"
+                pos_hint: {"center_x": .83, "center_y": .73}
+            MDLabel:
+                text: " Handfree Calz"
+                theme_text_color: "Custom"
+                font_name: "diff"
+                font_size: "25sp"
+                pos_hint: {"center_x": .63, "center_y": .66}
+            MDLabel:
+                text: "  Super Calz"
+                md_bg_color: 255/255, 149/255, 145/255
+                theme_text_color: "Custom"
+                font_name: "p"
+                font_size: "20sp"
+                size_hint: 0.4, 0.06
+                pos_hint: {"center_x": .24, "center_y": .56}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                text: "  Derivative Calz"
+                md_bg_color: 246/255, 247/255, 173/255
+                theme_text_color: "Custom"
+                font_name: "p"
+                font_size: "20sp"
+                size_hint: 0.5, 0.06
+                pos_hint: {"center_x": .72, "center_y": .56}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                text: "  Integral Calz"
+                md_bg_color: 175/255, 252/255, 169/255
+                theme_text_color: "Custom"
+                font_name: "p"
+                font_size: "20sp"
+                size_hint: 0.45, 0.06
+                pos_hint: {"center_x": .30, "center_y": .46}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                text: "   Age Calz"
+                md_bg_color: 174/255, 189/255, 252/255
+                theme_text_color: "Custom"
+                font_name: "p"
+                font_size: "20sp"
+                size_hint: 0.35, 0.06
+                pos_hint: {"center_x": .73, "center_y": .46}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                text: " BMI Calz"
+                md_bg_color: 252/255, 189/255, 231/255
+                theme_text_color: "Custom"
+                font_name: "p"
+                font_size: "20sp"
+                size_hint: 0.3, 0.06
+                pos_hint: {"center_x": .50, "center_y": .36}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDLabel:
+                text: " Swipe Right For Instructions >>>"
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.07
+                pos_hint: {"center_x": .50, "center_y": .07}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,1,1
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .19, .09
+                pos_hint: {"center_x": .52, "center_y": .20}
+                on_release:
+                    app.click(102)
+                Image:
+                    id: nav2
+                    source: "navi.png"
+                    size_hint: .05,.05
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y  
+        MDFloatLayout:
+            MDLabel:
+                text: " Damszt "
+                theme_text_color: "Custom"
+                font_name: "bold"
+                font_size: "20sp"
+                pos_hint: {"center_x": .70, "center_y": .960}
+            MDLabel:
+                text: "-  Super Calz"
+                theme_text_color: "Custom"
+                font_name: "good"
+                font_size: "23sp"
+                pos_hint: {"center_x": .91, "center_y": .965}
+            MDRectangleFlatButton:
+                id: rad
+                md_bg_color: 245/255, 252/255, 245/255
+                text: "Radians"
+                text_color: "black"
+                line_color: "black"
+                font_name: "o"
+                font_size: "18sp"
+                pos_hint: {"center_x": .25, "center_y": .850}
+                on_release:
+                    app.ch(10)
+            MDRectangleFlatButton:
+                id: deg
+                md_bg_color: 245/255, 252/255, 245/255
+                text: "Degrees"
+                text_color: "black"
+                line_color: "black"
+                font_name: "o"
+                font_size: "18sp"
+                pos_hint: {"center_x": .75, "center_y": .850}
+                on_release:
+                    app.ch(11)
+            TextInput:
+                id: inp
+                auto_indent: True
+                scroll_from_swipe: True
+                scroll_timeout: 30000
+                scroll_distance: "30dp"
+                background_normal: "bg.png"
+                background_active: "bg.png"
+                background_color: 243/255, 223/255, 245/255
+                readonly: True
+                text: ""
+                size_hint: 0.9, 0.3
+                font_name: "u"
+                font_size: "20sp"
+                height: "40dp"
+                pos_hint: {"center_x": .50, "center_y": .570}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 0.5
+                        rectangle: self.x, self.y, self.width,self.height
+            MDLabel:
+                text: " Calculation: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .50, "center_y": .750}
+            TextInput:
+                id: ans
+                auto_indent: True
+                scroll_from_swipe: True
+                scroll_timeout: 30000
+                scroll_distance: "30dp"
+                multiline: True
+                background_normal: "bg.png"
+                background_active: "bg.png"
+                background_color: 247/255, 246/255, 190/255
+                readonly: True
+                text: ""
+                size_hint: 0.9, 0.1
+                font_name: "o"
+                font_size: "18sp"
+                text_size: self.size
+                height: "40dp"
+                pos_hint: {"center_x": .50, "center_y": .260}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 0.5
+                        rectangle: self.x, self.y, self.width,self.height
+            MDLabel:
+                text: " Answer: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .50, "center_y": .345}
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .30, .15
+                pos_hint: {"center_x": .52, "center_y": .100}
+                on_press: 
+                    app.click(4)
+                Image:
+                    id: img
+                    source: "dams.png"
+                    size_hint: .30, .30
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .30, .15
+                pos_hint: {"center_x": .20, "center_y": .100}
+                on_press: 
+                    app.click(103)
+                Image:
+                    id: nav3
+                    source: "navi.png"
+                    size_hint: .30, .30
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .25, .12
+                pos_hint: {"center_x": .82, "center_y": .100}
+                on_press:
+                    app.pop(1)
+                Image:
+                    source: "info.png"
+                    size_hint: .10, .10
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+
+        MDFloatLayout:
+            MDLabel:
+                text: "Damszt "
+                theme_text_color: "Custom"
+                font_name: "bold"
+                font_size: "20sp"
+                pos_hint: {"center_x": .66, "center_y": .960}
+            MDLabel:
+                text: "   Derivative Calz"
+                theme_text_color: "Custom"
+                font_name: "good"
+                font_size: "23sp"
+                pos_hint: {"center_x": .87, "center_y": .965}
+            TextInput:
+                id: inp2
+                auto_indent: True
+                scroll_from_swipe: True
+                scroll_timeout: 30000
+                scroll_distance: "30dp"
+                multiline: True
+                background_normal: "bg.png"
+                background_active: "bg.png"
+                background_color: 190/255, 252/255, 182/255
+                readonly: True
+                text: ""
+                size_hint: 0.9, 0.2
+                font_name: "o"
+                font_size: "16sp"
+                height: "40dp"
+                pos_hint: {"center_x": .50, "center_y": .734}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 0.5
+                        rectangle: self.x, self.y, self.width,self.height
+            MDLabel:
+                text: " Expression: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .50, "center_y": .870}
+            TextInput:
+                id: ans2
+                auto_indent: True
+                scroll_from_swipe: True
+                scroll_timeout: 30000
+                scroll_distance: "30dp"
+                multiline: True
+                background_normal: "bg.png"
+                background_active: "bg.png"
+                background_color: 247/255, 246/255, 190/255
+                readonly: True
+                text: ""
+                size_hint: 0.9, 0.25
+                font_name: "o"
+                font_size: "16sp"
+                text_size: self.size
+                height: "40dp"
+                pos_hint: {"center_x": .50, "center_y": .410}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 0.5
+                        rectangle: self.x, self.y, self.width,self.height
+            MDLabel:
+                text: " Derivative: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .50, "center_y": .570}
+            MDRectangleFlatButton:
+                id: var2
+                md_bg_color: 245/255, 252/255, 245/255
+                text: "x"
+                text_color: "black"
+                line_color: "black"
+                font_name: "s"
+                font_size: "18sp"
+                pos_hint: {"center_x": .87, "center_y": .230}
+            
+            MDLabel:
+                text: " Variable Of Differentiation: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .47, "center_y": .230}
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .30, .15
+                pos_hint: {"center_x": .52, "center_y": .100}
+                on_press: 
+                    app.click(5)
+                Image:
+                    id: img1
+                    source: "dams.png"
+                    size_hint: .30, .30
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .30, .15
+                pos_hint: {"center_x": .20, "center_y": .100}
+                on_press: 
+                    app.click(104)
+                Image:
+                    id: nav4
+                    source: "navi.png"
+                    size_hint: .30, .30
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .25, .12
+                pos_hint: {"center_x": .82, "center_y": .100}
+                on_press:
+                    app.pop(2)
+                Image:
+                    source: "info.png"
+                    size_hint: .10, .10
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+
+        MDFloatLayout:
+            MDLabel:
+                text: " Damszt "
+                theme_text_color: "Custom"
+                font_name: "bold"
+                font_size: "20sp"
+                pos_hint: {"center_x": .68, "center_y": .960}
+            MDLabel:
+                text: "-  Integral Calz"
+                theme_text_color: "Custom"
+                font_name: "good"
+                font_size: "23sp"
+                pos_hint: {"center_x": .89, "center_y": .965}
+            TextInput:
+                id: inp3
+                auto_indent: True
+                scroll_from_swipe: True
+                scroll_timeout: 30000
+                scroll_distance: "30dp"
+                multiline: True
+                background_normal: "bg.png"
+                background_active: "bg.png"
+                background_color: 255/255, 219/255, 219/255
+                readonly: True
+                text: ""
+                size_hint: 0.9, 0.2
+                font_name: "o"
+                font_size: "16sp"
+                height: "40dp"
+                pos_hint: {"center_x": .50, "center_y": .734}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 0.5
+                        rectangle: self.x, self.y, self.width,self.height
+            MDLabel:
+                text: " Expression: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .50, "center_y": .870}
+            TextInput:
+                id: ans3
+                auto_indent: True
+                scroll_from_swipe: True
+                scroll_timeout: 30000
+                scroll_distance: "30dp"
+                multiline: True
+                background_normal: "bg.png"
+                background_active: "bg.png"
+                background_color: 247/255, 246/255, 190/255
+                readonly: True
+                text: ""
+                size_hint: 0.9, 0.25
+                font_name: "o"
+                font_size: "16sp"
+                text_size: self.size
+                height: "40dp"
+                pos_hint: {"center_x": .50, "center_y": .410}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 0.5
+                        rectangle: self.x, self.y, self.width,self.height
+            
+            MDLabel:
+                text: " Anti-Derivative: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .50, "center_y": .570}
+            MDRectangleFlatButton:
+                id: var3
+                md_bg_color: 245/255, 252/255, 245/255
+                text: "x"
+                text_color: "black"
+                line_color: "black"
+                font_name: "s"
+                font_size: "18sp"
+                pos_hint: {"center_x": .80, "center_y": .230}
+            
+            MDLabel:
+                text: " Variable Of Integration: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .50, "center_y": .230}
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .30, .15
+                pos_hint: {"center_x": .52, "center_y": .100}
+                on_press: 
+                    app.click(6)
+                Image:
+                    id: img2
+                    source: "dams.png"
+                    size_hint: .30, .30
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .30, .15
+                pos_hint: {"center_x": .20, "center_y": .100}
+                on_press: 
+                    app.click(105)
+                Image:
+                    id: nav5
+                    source: "navi.png"
+                    size_hint: .30, .30
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .25, .12
+                pos_hint: {"center_x": .82, "center_y": .100}
+                on_press:
+                    app.pop(3)
+                Image:
+                    source: "info.png"
+                    size_hint: .10, .10
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+
+        MDFloatLayout:
+            MDLabel:
+                text: " Damszt "
+                theme_text_color: "Custom"
+                font_name: "bold"
+                font_size: "20sp"
+                pos_hint: {"center_x": .73, "center_y": .960}
+            MDLabel:
+                text: "-  Age Calz"
+                theme_text_color: "Custom"
+                font_name: "good"
+                font_size: "23sp"
+                pos_hint: {"center_x": .94, "center_y": .965}   
+            TextInput:
+                id: dob
+                hint_text: " yyyy/mm/dd"
+                background_color: 126/255, 214/255, 217/255
+                multiline: True
+                background_normal: "bg.png"
+                background_active: "bg.png"
+                readonly: True
+                text: ""
+                size_hint: 0.9, 0.08
+                font_name: "o"
+                font_size: "18sp"
+                height: "40dp"
+                pos_hint: {"center_x": .50, "center_y": .801}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 0.5
+                        rectangle: self.x, self.y, self.width,self.height
+            MDLabel:
+                text: " Date Of Birth: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .50, "center_y": .870}
+            TextInput:
+                id: todate
+                multiline: True
+                background_color: 247/255, 247/255, 119/255
+                background_normal: "bg.png"
+                background_active: "bg.png"
+                readonly: True
+                text: ""
+                size_hint: 0.9, 0.08
+                font_name: "o"
+                font_size: "18sp"
+                height: "40dp"
+                pos_hint: {"center_x": .50, "center_y": .610}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 0.5
+                        rectangle: self.x, self.y, self.width,self.height
+            MDLabel:
+                text: " Conclusion: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .50, "center_y": .325}
+            TextInput:
+                id: what
+                multiline: True
+                background_normal: "bg.png"
+                background_active: "bg.png"
+                readonly: True
+                text: ""
+                size_hint: 0.9, 0.08
+                font_name: "o"
+                font_size: "18sp"
+                height: "40dp"
+                pos_hint: {"center_x": .50, "center_y": .255}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 0.5
+                        rectangle: self.x, self.y, self.width,self.height
+            MDLabel:
+                text: " Today's Date: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .50, "center_y": .680}
+            TextInput:
+                id: urage
+                hint_text: " Tap & say your dob"
+                background_color: 180/255, 245/255, 105/255
+                multiline: True
+                background_normal: "bg.png"
+                background_active: "bg.png"
+                readonly: True
+                text: ""
+                size_hint: 0.9, 0.08
+                font_name: "o"
+                font_size: "18sp"
+                height: "40dp"
+                pos_hint: {"center_x": .50, "center_y": .430}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 0.5
+                        rectangle: self.x, self.y, self.width,self.height
+            MDLabel:
+                text: " Your Age: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .50, "center_y": .500}
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .30, .15
+                pos_hint: {"center_x": .52, "center_y": .100}
+                on_press: 
+                    app.click(7)
+                Image:
+                    id: img3
+                    source: "dams.png"
+                    size_hint: .30, .30
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .30, .15
+                pos_hint: {"center_x": .20, "center_y": .100}
+                on_press: 
+                    app.click(106)
+                Image:
+                    id: nav6
+                    source: "navi.png"
+                    size_hint: .30, .30
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .25, .12
+                pos_hint: {"center_x": .82, "center_y": .100}
+                on_press:
+                    app.pop(4)
+                Image:
+                    source: "info.png"
+                    size_hint: .10, .10
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+        MDFloatLayout:
+            MDLabel:
+                text: " Damszt "
+                theme_text_color: "Custom"
+                font_name: "bold"
+                font_size: "20sp"
+                pos_hint: {"center_x": .73, "center_y": .960}
+            MDLabel:
+                text: "-  BMI Calz"
+                theme_text_color: "Custom"
+                font_name: "good"
+                font_size: "23sp"
+                pos_hint: {"center_x": .94, "center_y": .965}   
+            MDRectangleFlatButton:
+                id: metric
+                md_bg_color: 245/255, 252/255, 245/255
+                text: "Metric"
+                text_color: "black"
+                line_color: "black"
+                font_name: "o"
+                font_size: "16sp"
+                pos_hint: {"center_x": .25, "center_y": .88}
+                on_release:
+                    app.ch(12)
+            MDRectangleFlatButton:
+                id: imperial
+                md_bg_color: 245/255, 252/255, 245/255
+                text: "Imperial"
+                text_color: "black"
+                line_color: "black"
+                font_name: "o"
+                font_size: "16sp"
+                pos_hint: {"center_x": .75, "center_y": .88}
+                on_release:
+                    app.ch(13)
+            MDRectangleFlatButton:
+                id: w
+                ripple_duration_in_fast: .1
+                ripple_scale: 1
+                ripple_color: 126/255, 214/255, 217/255
+                line_color: 0,0,0
+                valign: "center"
+                md_bg_color: 126/255, 214/255, 217/255
+                text_color: 0,0,0
+                size_hint: 0.4, 0.07
+                font_name: "s"
+                font_size: "18sp"
+                height: "40dp"
+                pos_hint: {"center_x": .65, "center_y": .761}
+                on_release:
+                    app.click(8)
+            MDLabel:
+                text: " Weight: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .60, "center_y": .759}
+            MDRectangleFlatButton:
+                id: h
+                ripple_duration_in_fast: .1
+                ripple_scale: 1
+                ripple_color: 247/255, 247/255, 119/255
+                md_bg_color: 247/255, 247/255, 119/255
+                text_color: 0,0,0
+                line_color: 0,0,0
+                size_hint: 0.4, 0.07
+                font_name: "s"
+                font_size: "18sp"
+                height: "40dp"
+                pos_hint: {"center_x": .65, "center_y": .640}
+                on_release:
+                    app.click(9)
+            MDLabel:
+                text: " Height: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .60, "center_y": .645}
+            MDRectangleFlatButton:
+                id: urage1
+                ripple_duration_in_fast: .1
+                ripple_scale: 1
+                ripple_color: 180/255, 245/255, 105/255
+                text: " Body Mass Index"
+                text_color: 0,0,0
+                line_color: 0,0,0
+                md_bg_color: 180/255, 245/255, 105/255
+                size_hint: 0.9, 0.08
+                font_name: "s"
+                font_size: "18sp"
+                height: "40dp"
+                pos_hint: {"center_x": .50, "center_y": .470}
+                on_release:
+                    app.ev()
+            MDLabel:
+                text: " BMI: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .50, "center_y": .540}
+            MDLabel:
+                text: " Conclusion: "
+                theme_text_color: "Custom"
+                font_name: "g"
+                font_size: "18sp"
+                size_hint: 0.9, 0.1
+                pos_hint: {"center_x": .495, "center_y": .368}
+            TextInput:
+                id: con
+                background_normal: "bg.png"
+                background_active: "bg.png"
+                readonly: True
+                text: ""
+                size_hint: 0.9, 0.1
+                font_name: "s"
+                font_size: "18sp"
+                height: "40dp"
+                pos_hint: {"center_x": .50, "center_y": .285}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 0.5
+                        rectangle: self.x, self.y, self.width,self.height
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .30, .15
+                pos_hint: {"center_x": .35, "center_y": .100}
+                on_release:
+                    app.click(107)
+                Image:
+                    id: nav7
+                    source: "navi.png"
+                    size_hint: .30, .30
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .25, .12
+                pos_hint: {"center_x": .65, "center_y": .100}
+                on_press:
+                    app.pop(5)
+                Image:
+                    source: "info.png"
+                    size_hint: .10, .10
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+        MDFloatLayout:
+            id: "history"
+            MDLabel:
+                text: " Damszt "
+                theme_text_color: "Custom"
+                font_name: "bold"
+                font_size: "20sp"
+                pos_hint: {"center_x": .73, "center_y": .960}
+            MDLabel:
+                text: " History"
+                font_name: "good"
+                size_hint: .30,.05
+                font_size: "23sp"
+                pos_hint: {"center_x": .65, "center_y": .965}
+            TextInput:
+                id: his
+                scroll_from_swipe: True
+                scroll_timeout: 30000
+                scroll_distance: "30dp"
+                multiline: True
+                background_normal: "bg.png"
+                background_active: "bg.png"
+                readonly: True
+                size_hint: 0.9, 0.70
+                cursor_color: 1,1,1,1
+                text: "Please do a Calculation to Retrieve your Past Calculations!!!"
+                background_color: 240/255,255/255,255/255
+                font_name: "p"
+                font_size: "18sp"
+                text_size: self.size
+                height: "40dp"
+                pos_hint: {"center_x": .505, "center_y": .560}
+                canvas.before:
+                    Color:
+                        rgba: 0,0,0,1
+                    Line:
+                        width: 0.5
+                        rectangle: self.x, self.y, self.width,self.height
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .20, .15
+                pos_hint: {"center_x": .50, "center_y": .100}
+                on_press: 
+                    app.clean()
+                Image:
+                    source: "bin.png"
+                    size_hint: 1.5, 1.5
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .30, .15
+                pos_hint: {"center_x": .20, "center_y": .100}
+                on_press: 
+                    app.click(108)
+                Image:
+                    id: nav8
+                    source: "navi.png"
+                    size_hint: .30, .30
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+            Button:
+                text: "hello"
+                font_size: 32
+                size_hint: .25, .12
+                pos_hint: {"center_x": .82, "center_y": .100}
+                on_press:
+                    app.pop(6)
+                Image:
+                    source: "info.png"
+                    size_hint: .10, .10
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+<ScrollableLabel>:
+    MDLabel:
+        size_hint_y: None
+        height: self.texture_size[1]
+        theme_text_color: "Custom"
+        font_size: "20sp"
+        font_name: "u"
+        text_size: self.width, None
+        text: root.text
+        md_bg_color: (240/255,248/255,255/255)
+        halign: "auto"
+        valign: "top"
